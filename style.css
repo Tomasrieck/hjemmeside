@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    background: rgb(0,0,0);
+}
+.body1 img{
+    width: 100%;
+    position: absolute;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    animation: fade 20s infinite;
+}
+.tekst {
+    color: white;
+    /*text-shadow: 2px 2px #000000;*/
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    text-align: center;
+}
+.tekst h1 {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    font-size: 330%;
+    font-weight: lighter;
+    font-family: "serif";
+    padding: 25px;
+    border-radius: 20px;
+}
+.tekst h1 u {
+    font-family: "serif";
+}
+.tekst p {
+    font-family: "serif";
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+}
+.tekst a{
+    font-family: "serif";
+    color: rgb(255, 255, 255);
+}
+.booking {
+    top: -260px;
+    margin-left: 50%;
+    font-size: 130%;
+}
+.omOs {
+    top: -270px;
+    text-align: left;
+    line-height: 38px;
+    font-size: 115%;
+}
+.body2 img{
+    width: 100%;
+    position: absolute;
+    margin-top: 29%;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img {
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.body3 img{
+    width: 100%;
+    position: absolute;
+    margin-top: 145%;
+}
+.jeppe img {
+    position: absolute;
+    left: 65%;
+    margin-top: -60%;
+    width: 380px; /* width of container */
+    height: 530px; /* height of container */
+    object-fit: cover;
+    object-position: 100% 300%;
+}
+.jeppe p {
+    text-align: left;
+    width: 150px;
+    height: 830px;
+    left: 132%;
+    top: 360px;
+    line-height: 20px;
+}
+.guffe img {
+    position: absolute;
+    left: -40%;
+    margin-top: -12%;
+    width: 380px; /* width of container */
+    height: 530px; /* height of container */
+    object-fit: cover;
+    object-position: 100% 300%;
+}
+.guffe p {
+    text-align: left;
+    width: 200px;
+    height: 140px;
+    left: 31%;
+    top: 360px;
+    line-height: 20px;
+}
+.magnus img {
+    position: absolute;
+    left: 65%;
+    margin-top: 15%;
+    width: 380px; /* width of container */
+    height: 480px; /* height of container */
+    object-fit: cover;
+    object-position: 55% 300%;
+}
+.magnus p {
+    text-align: left;
+    width: 150px;
+    height: 830px;
+    left: 132%;
+    top: 910px;
+    line-height: 20px;
+}
+.haas img {
+    position: absolute;
+    left: -40%;
+    margin-top: 62%;
+    width: 380px; /* width of container */
+    height: 480px; /* height of container */
+    object-fit: cover;
+    object-position: 50% 300%;
+}
+.haas p {
+    text-align: left;
+    width: 200px;
+    height: 140px;
+    left: 31%;
+    top: 923px;
+    line-height: 20px;
+}
+.frederik img {
+    position: absolute;
+    left: 65%;
+    margin-top: 93%;
+    width: 380px; /* width of container */
+    height: 480px; /* height of container */
+    object-fit: cover;
+    object-position: 50% 300%;
+}
+.frederik p {
+    text-align: left;
+    width: 150px;
+    height: 830px;
+    left: 132%;
+    top: 1470px;
+    line-height: 20px;
+}
+.mig img {
+    position: absolute;
+    left: -40%;
+    margin-top: 140%;
+    width: 380px; /* width of container */
+    height: 480px; /* height of container */
+    object-fit: cover;
+    object-position: 50% 300%;
+}
+.mig p {
+    text-align: left;
+    width: 200px;
+    height: 140px;
+    left: 31%;
+    top: 1477px;
+    line-height: 20px;
+}
+
