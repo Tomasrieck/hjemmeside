@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Avenir";
+    color: white;
 }
 .main{
     width: 100%;
@@ -12,61 +13,52 @@
 }
 .body1 img{
     width: 100%;
-    position: absolute;
+    position: fixed;
     filter: blur(4px);
     -webkit-filter: blur(4px);
-    animation: fade 20s infinite;
 }
-.tekst {
-    color: white;
-    /*text-shadow: 2px 2px #000000;*/
+.overskrift h1 {
     position: absolute;
+    margin-left: 50%;
     top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 50%;
-    text-align: center;
-}
-.tekst h1 {
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    font-size: 330%;
+    font-size: 4.2vw;
     font-weight: lighter;
-    font-family: "serif";
-    padding: 25px;
+    font-family: "Devanagari";
+    width: 50%;
+    padding: 1%;
     border-radius: 20px;
-}
-.tekst h1 u {
-    font-family: "serif";
-}
-.tekst p {
-    font-family: "serif";
-    position: absolute;
-    bottom: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     z-index: 2;
-    width: 80%;
 }
-.tekst a{
-    font-family: "serif";
-    color: rgb(255, 255, 255);
+.overskrift h1 u {
+    font-family: "Devanagari";
 }
 .booking {
-    top: -260px;
-    margin-left: 50%;
-    font-size: 130%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    font-size: 1.6vw;
+    color: rgb(192, 192, 192);
 }
 .omOs {
-    top: -270px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 210px;
+    left: 38%;
     text-align: left;
     line-height: 38px;
-    font-size: 115%;
+    font-size: 1.5vw;
+    color: rgb(192, 192, 192);
 }
-.body2 img{
-    width: 100%;
+.bottomLogo img{
     position: absolute;
-    margin-top: 29%;
+    margin-top: 10%;
+    width: 100%;
 }
 nav{
     width: 100%;
@@ -81,12 +73,12 @@ nav{
     flex-basis: 20%;
 }
 .logo img {
-    width: 400px;
+    width: 150%;
 }
 .nav-links{
     flex: 1;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .nav-links ul li{
     list-style: none;
@@ -96,112 +88,29 @@ nav{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
+    font-size: 115%;
 }
-.body3 img{
+.gallery {
+    margin: auto;
+    width: 90%;
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2%;
+}
+.pic {
+    height: auto;
+    max-width: 100%;
+    width: auto\9;
+}
+.pic img {
+    height: auto;
     width: 100%;
-    position: absolute;
-    margin-top: 145%;
 }
-.jeppe img {
-    position: absolute;
-    left: 65%;
-    margin-top: -60%;
-    width: 380px; /* width of container */
-    height: 530px; /* height of container */
-    object-fit: cover;
-    object-position: 100% 300%;
-}
-.jeppe p {
+.pic p {
+    line-height: 200%;
+    float: bottom;
     text-align: left;
-    width: 150px;
-    height: 830px;
-    left: 132%;
-    top: 360px;
-    line-height: 20px;
+    font-size: 1.1vw;
+    color: rgb(192, 192, 192);
 }
-.guffe img {
-    position: absolute;
-    left: -40%;
-    margin-top: -12%;
-    width: 380px; /* width of container */
-    height: 530px; /* height of container */
-    object-fit: cover;
-    object-position: 100% 300%;
-}
-.guffe p {
-    text-align: left;
-    width: 200px;
-    height: 140px;
-    left: 31%;
-    top: 360px;
-    line-height: 20px;
-}
-.magnus img {
-    position: absolute;
-    left: 65%;
-    margin-top: 15%;
-    width: 380px; /* width of container */
-    height: 480px; /* height of container */
-    object-fit: cover;
-    object-position: 55% 300%;
-}
-.magnus p {
-    text-align: left;
-    width: 150px;
-    height: 830px;
-    left: 132%;
-    top: 910px;
-    line-height: 20px;
-}
-.haas img {
-    position: absolute;
-    left: -40%;
-    margin-top: 62%;
-    width: 380px; /* width of container */
-    height: 480px; /* height of container */
-    object-fit: cover;
-    object-position: 50% 300%;
-}
-.haas p {
-    text-align: left;
-    width: 200px;
-    height: 140px;
-    left: 31%;
-    top: 923px;
-    line-height: 20px;
-}
-.frederik img {
-    position: absolute;
-    left: 65%;
-    margin-top: 93%;
-    width: 380px; /* width of container */
-    height: 480px; /* height of container */
-    object-fit: cover;
-    object-position: 50% 300%;
-}
-.frederik p {
-    text-align: left;
-    width: 150px;
-    height: 830px;
-    left: 132%;
-    top: 1470px;
-    line-height: 20px;
-}
-.mig img {
-    position: absolute;
-    left: -40%;
-    margin-top: 140%;
-    width: 380px; /* width of container */
-    height: 480px; /* height of container */
-    object-fit: cover;
-    object-position: 50% 300%;
-}
-.mig p {
-    text-align: left;
-    width: 200px;
-    height: 140px;
-    left: 31%;
-    top: 1477px;
-    line-height: 20px;
-}
-
