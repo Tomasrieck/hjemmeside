@@ -14,8 +14,10 @@
 .body1 img{
     width: 100%;
     position: fixed;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    image-rendering: pixelated;
+    image-resolution: 300dpi;
 }
 .overskrift h1 {
     position: absolute;
@@ -36,30 +38,135 @@
 .overskrift h1 u {
     font-family: "Devanagari";
 }
-.booking {
-    top: 40%;
+.bookingTekst {
+    z-index: 1;
+    display: block;
+    top: 60%;
     transform: translate(-50%, -50%);
-    left: 50%;
-    text-align: center;
+    left: 17%;
+    text-align: left;
     position: absolute;
-    font-size: 1.6vw;
+    font-size: 1.55vw;
     color: rgb(192, 192, 192);
 }
+.bookingTekst a {
+    color: rgb(255, 255, 255);
+    display: block;
+}
+.bookingTekst a:hover{
+    color: rgb(24, 124, 255);
+}
+section {
+    height: 100vh;
+    max-width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-top: 40px;
+}
+.mailSender {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.mailSender p {
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+}
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(128, 128, 128, 0.199);
+    margin-top: 5px;
+    color: black;
+}
+label {
+    color:rgb(0, 0, 0);
+}
+textarea {
+    resize: none;
+}
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: rgb(27, 166, 247);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+button[type="submit"]:hover{
+    background-color: rgb(214, 226, 236);
+}
+#status {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+#status.sendt {
+    background-color: rgb(53, 189, 0);
+    animation: status 4s ease forwards;
+}
+#status.ejSendt {
+    background-color: rgb(189, 38, 0);
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 .omOs {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 210px;
-    left: 38%;
+    margin-top: 210px;
+    margin-left: 38%;
     text-align: left;
     line-height: 38px;
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: rgb(192, 192, 192);
 }
+
 .bottomLogo img{
+    display: block;
     position: absolute;
     margin-top: 10%;
     width: 100%;
+    image-rendering: auto;
 }
+
 nav{
     width: 100%;
     height: 100px;
@@ -74,6 +181,7 @@ nav{
 }
 .logo img {
     width: 150%;
+    image-rendering: auto;
 }
 .nav-links{
     flex: 1;
@@ -90,10 +198,15 @@ nav{
     text-decoration: none;
     font-size: 115%;
 }
+.nav-links ul li a:hover{
+    transition: all 0.3s ease 0s;
+    color: rgb(107, 107, 107);
+}
+
 .gallery {
     margin: auto;
     width: 90%;
-    margin-top: 250px;
+    margin-top: 450px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2%;
@@ -104,6 +217,7 @@ nav{
     width: auto\9;
 }
 .pic img {
+    image-rendering: pixelated;
     height: auto;
     width: 100%;
 }

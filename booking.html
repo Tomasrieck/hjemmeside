@@ -20,19 +20,40 @@
                 </ul>
             </div>
         </nav>
-        <div class="body2">
-            <div class="tekst">
-                <p class="booking">For booking: <br> <br> <br>
-                Ring på tlf: 42 65 26 11 <br> <br> <br>
-                Skriv mail på: <a href="mailto:jesperhj@live.dk">jesperhj@live.dk</a> <br> <br> <br>
-                Skriv til os på FaceBook: <a href="https://www.facebook.com/RootsinSuits">Roots in Suits</a></p>
+        <p class="bookingTekst">
+        Tlf.: 42 65 26 11 <br> <br> <br>
+        FaceBook: <a href="https://www.facebook.com/RootsinSuits">facebook.com/RootsinSuits</a> <br> <br> <br>
+        Instagram: <a href="https://www.instagram.com/rootsinsuits/">instagram.com/rootsinsuits</a>
+        </p>
+        <section>
+            <div class="mailSender">
+                <p>Send mail for booking: <br></p>
+                <form action="https://formspree.io/f/xvodjwae" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label for="firstName">Fornavn</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Efternavn</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Besked</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <div class="bottomLogo">
-                <img src="images/Logo.png" loading="lazy" style="bottom:0px;">
-            </div>
-        </div>
-
+            <div id="status"></div>
+        </section>
+        <div class="bottomLogo">
+            <img src="images/Logo.png" loading="lazy" style="margin-bottom:5px;">
+        </div>      
     </div>
-
+    <script src="./main.js"></script>
 </body>
 </html>
