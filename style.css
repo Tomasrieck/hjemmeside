@@ -218,3 +218,34 @@ nav{
     font-size: 1.1vw;
     color: rgb(192, 192, 192);
 }
+
+.anmeldelser {
+    transform: translate(-50%, -50%);
+    margin-top: 7%;
+    margin-left: 38%;
+    text-align: left;
+    line-height: 150%;
+    font-size: 3vw;
+    color: rgb(192, 192, 192);
+}
+.reviews {
+    background-color: rgb(36, 37, 38);
+    margin: auto;
+    width: 90%;
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6%;
+    padding: 4%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+}
+.rew {
+    height: auto;
+    max-width: 100%;
+    width: auto\9;
+}
+.rew img {
+    height: auto;
+    width: 100%;
+}
