@@ -168,6 +168,7 @@ nav{
 }
 .logo{
     flex-basis: 20%;
+    margin-right: 7%;
 }
 .logo img {
     width: 150%;
