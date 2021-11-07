@@ -32,13 +32,18 @@
     text-align: center;
     z-index: 2;
 }
-.overskrift h1 u {
+.overskrift h1 a {
     font-family: "Devanagari";
 }
+.overskrift h1 a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(156, 156, 156);
+}
+
 .bookingTekst {
     margin-top: 3%;
     text-align: center;
-    font-size: 2.55vh;
+    font-size: 2.9vh;
     color: rgb(192, 192, 192);
     line-height: 300%;
     display: block;
@@ -54,8 +59,8 @@
 .mailSender {
     margin: auto;
     margin-top: 5%;
-    width: 50%;
-    max-width: 600px;
+    width: 70%;
+    max-width: 650px;
     padding: 20px;
     box-shadow: #00000010;
     background-color: white;
@@ -140,7 +145,7 @@ button[type="submit"]:hover{
     margin-top: 9%;
     margin-left: 38%;
     text-align: left;
-    line-height: 150%;
+    line-height: 190%;
     font-size: 1.2vw;
     color: rgb(192, 192, 192);
 }
@@ -165,26 +170,29 @@ nav{
 }
 .logo{
     flex-basis: 20%;
-    margin-right: 7%;
+    margin-right: 9%;
 }
 .logo img {
     width: 150%;
     image-rendering: auto;
 }
 .nav-links{
+    width: 100%;
     flex: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2%;
     text-align: right;
-    margin-right: 20px;
+    font-size: 1.5vw;
+    margin-right: 1%;
 }
 .nav-links ul li{
-    list-style: none;
-    display: inline-block;
+    display: inline;
     margin: 0 25px;
 }
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 2.2vh;
 }
 .nav-links ul li a:hover{
     transition: all 0.3s ease 0s;
@@ -219,31 +227,29 @@ nav{
 
 .anmeldelser {
     transform: translate(-50%, -50%);
-    margin-top: 7%;
+    margin-top: 6%;
     margin-left: 38%;
     text-align: left;
     line-height: 150%;
     font-size: 3vw;
-    color: rgb(192, 192, 192);
+    color: white;
 }
 .reviews {
-    background-color: rgb(36, 37, 38);
     margin: auto;
+    margin-top: 2%;
     width: 90%;
-    margin-top: 4%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 6%;
-    padding: 4%;
-    padding-bottom: 5%;
-    border-radius: 20px;
 }
 .rew {
     height: auto;
-    max-width: 100%;
-    width: auto\9;
+    background-color: rgb(36, 37, 38);
+    padding: 3%;
+    border-radius: 20px;
+    align-self: center;
 }
 .rew img {
-    height: auto;
+    image-rendering: auto;
     width: 100%;
 }
