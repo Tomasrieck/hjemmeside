@@ -14,10 +14,7 @@
 .body1 img{
     width: 100%;
     position: fixed;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    image-rendering: pixelated;
-    image-resolution: 300dpi;
+    image-rendering: auto;
 }
 .overskrift h1 {
     position: absolute;
@@ -208,7 +205,7 @@ nav{
     width: auto\9;
 }
 .pic img {
-    image-rendering: pixelated;
+    image-rendering: auto;
     height: auto;
     width: 100%;
 }
