@@ -31,6 +31,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
+    animation: fade 2s ease forwards;
 }
 .overskrift h1 a {
     font-family: "Devanagari";
@@ -140,14 +141,21 @@ button[type="submit"]:hover{
 }
 
 .omOs {
-    position: absolute;
     transform: translate(-50%, -50%);
-    margin-top: 9%;
+    margin-top: 17%;
     margin-left: 38%;
+    display: block;
+    z-index: 2;
+}
+.omOs p {
     text-align: left;
-    line-height: 190%;
+    line-height: 2.2;
     font-size: 1.2vw;
-    color: rgb(192, 192, 192);
+    color: rgb(163, 163, 163);
+}
+.omOs a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(163, 163, 163);
 }
 
 .bottomLogo img{
@@ -201,8 +209,8 @@ nav{
 
 .gallery {
     margin: auto;
+    margin-top: -5%;
     width: 90%;
-    margin-top: 20%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2%;
@@ -216,6 +224,17 @@ nav{
     image-rendering: auto;
     height: auto;
     width: 100%;
+    animation: fade 2s ease forwards;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    90%{
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .pic p {
     line-height: 200%;
@@ -241,6 +260,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 6%;
+    animation: fade 2s ease forwards;
 }
 .rew {
     height: auto;
