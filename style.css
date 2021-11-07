@@ -19,7 +19,7 @@
 .overskrift h1 {
     position: absolute;
     margin-left: 50%;
-    top: 75%;
+    margin-top: 33%;
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     font-size: 4.2vw;
@@ -38,7 +38,7 @@
 }
 .overskrift h1 a:hover {
     transition: all 0.3s ease 0s;
-    color: rgb(156, 156, 156);
+    color: rgb(23, 151, 255);
 }
 
 .bookingTekst {
@@ -53,9 +53,6 @@
     color: rgb(255, 255, 255);
     display: inline-block;
     text-align: left;
-}
-.bookingTekst a:hover{
-    color: rgb(24, 124, 255);
 }
 .mailSender {
     margin: auto;
@@ -186,17 +183,15 @@ nav{
 }
 .nav-links{
     width: 100%;
-    flex: 1;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2%;
     text-align: right;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     margin-right: 1%;
 }
 .nav-links ul li{
     display: inline;
-    margin: 0 25px;
+    margin-right: 3%;
 }
 .nav-links ul li a{
     color: #fff;
@@ -251,7 +246,7 @@ nav{
     text-align: left;
     line-height: 150%;
     font-size: 3vw;
-    color: white;
+    color: rgb(192, 192, 192);;
 }
 .reviews {
     margin: auto;
