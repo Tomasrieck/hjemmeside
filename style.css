@@ -140,7 +140,7 @@ button[type="submit"]:hover{
 .omOs {
     position: absolute;
     transform: translate(-50%, -50%);
-    margin-top: 12%;
+    margin-top: 9%;
     margin-left: 38%;
     text-align: left;
     line-height: 150%;
@@ -149,6 +149,7 @@ button[type="submit"]:hover{
 }
 
 .bottomLogo img{
+    margin-top: 10%;
     display: block;
     position: absolute;
     width: 100%;
@@ -185,7 +186,7 @@ nav{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 1.7vw;
+    font-size: 2.2vh;
 }
 .nav-links ul li a:hover{
     transition: all 0.3s ease 0s;
@@ -195,7 +196,7 @@ nav{
 .gallery {
     margin: auto;
     width: 90%;
-    margin-top: 25%;
+    margin-top: 20%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2%;
