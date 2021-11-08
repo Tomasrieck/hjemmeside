@@ -55,6 +55,10 @@
     display: inline-block;
     text-align: left;
 }
+.bookingTekst a img:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.2);
+}
 .mailSender {
     margin: auto;
     margin-top: 5%;
