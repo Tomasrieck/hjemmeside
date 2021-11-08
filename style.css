@@ -15,6 +15,7 @@
     width: 100%;
     position: fixed;
     image-rendering: auto;
+    animation: fade 2s ease forwards;
 }
 .overskrift h1 {
     position: absolute;
