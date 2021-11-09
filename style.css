@@ -148,7 +148,7 @@ button[type="submit"]:hover{
 .omOs {
     display: block;
     margin-left: 7%;
-    margin-top: 3%;
+    margin-top: 6%;
     width: 70%;
 }
 .omOs p {
@@ -174,7 +174,7 @@ button[type="submit"]:hover{
 nav{
     width: 100%;
     position: sticky;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     margin-top: 1%;
     z-index: 1;
     display: flex;
@@ -248,7 +248,7 @@ nav{
 
 .anmeldelser {
     transform: translate(-50%, -50%);
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: 38%;
     text-align: left;
     line-height: 150%;
