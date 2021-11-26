@@ -278,3 +278,9 @@ nav{
     image-rendering: auto;
     width: 100%;
 }
+
+#skjult {
+    z-index: 0;
+    color: black;
+    font-size: 1px;
+}
