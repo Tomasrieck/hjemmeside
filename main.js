@@ -4,7 +4,7 @@ function recaptcha_callback() {
   var sendBtn = document.querySelector('#send-btn');
   sendBtn.removeAttribute('disabled');
   sendBtn.style.cursor = 'pointer';
-  sendBtn.style.color = 'rgb(0, 255, 0)';
+  sendBtn.style.color = 'rgb(0, 245, 0)';
 }
 
 async function handleSubmit(event) {
