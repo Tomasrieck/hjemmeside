@@ -1,5 +1,12 @@
 var form = document.getElementById("my-form");
 
+function recaptcha_callback() {
+  var sendBtn = document.querySelector('#send-btn');
+  sendBtn.removeAttribute('disabled');
+  sendBtn.style.cursor = 'pointer';
+  sendBtn.style.color = green;
+}
+
 async function handleSubmit(event) {
   event.preventDefault();
   var status = document.getElementById("status");

@@ -103,16 +103,19 @@ button[type="submit"] {
     padding: 15px;
     font-size: 2.7vw;
     border-radius: 8px;
-    color: rgb(27, 166, 247);
+    color: rgb(255, 0, 0);
     font-weight: bold;
     text-align: center;
-    cursor: pointer;
     margin-top: 10px;
     transition: .3s ease background-color;
 }
 button[type="submit"]:hover{
     background-color: rgb(214, 226, 236);
 }
+#send-btn {
+    cursor: not-allowed;
+}
+
 #status {
     text-align: center;
     width: 90%;
