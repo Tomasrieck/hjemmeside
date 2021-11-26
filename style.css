@@ -17,7 +17,7 @@
     image-rendering: auto;
     animation: fade 2s ease forwards;
 }
-.overskrift h1 {
+.overskrift h2 {
     position: absolute;
     margin-left: 50%;
     margin-top: 33%;
@@ -34,10 +34,10 @@
     z-index: 2;
     animation: fade 2s ease forwards;
 }
-.overskrift h1 a {
+.overskrift h2 a {
     font-family: "Devanagari";
 }
-.overskrift h1 a:hover {
+.overskrift h2 a:hover {
     transition: all 0.3s ease 0s;
     color: rgb(23, 151, 255);
 }
@@ -283,4 +283,5 @@ nav{
     z-index: 0;
     color: black;
     font-size: 1px;
+    animation: fade 2s ease forwards;
 }
