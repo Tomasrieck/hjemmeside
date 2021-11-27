@@ -12,6 +12,7 @@
     background: rgb(0,0,0);
 }
 .body1 img{
+    z-index: 1;
     width: 100%;
     position: fixed;
     image-rendering: auto;
@@ -279,7 +280,7 @@ nav{
     width: 100%;
 }
 
-#skjult {
+#skjult h1 {
     z-index: 0;
     color: black;
     font-size: 1px;
