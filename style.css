@@ -115,6 +115,7 @@ button[type="submit"] {
   cursor: not-allowed;
 }
 #send-btn:hover {
+  background-color: rgb(207, 35, 35);
 }
 
 #status {
