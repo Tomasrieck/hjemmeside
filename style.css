@@ -110,8 +110,11 @@ button[type="submit"] {
   margin-top: 10px;
   transition: 0.3s ease background-color;
 }
+
 #send-btn {
   cursor: not-allowed;
+}
+#send-btn:hover {
 }
 
 #status {
