@@ -2,9 +2,10 @@ var form = document.getElementById("my-form");
 
 function recaptcha_callback() {
   var sendBtn = document.querySelector('#send-btn');
+  var sendBtnHover = document.querySelector('#send-btn:hover');
   sendBtn.removeAttribute('disabled');
   sendBtn.style.cursor = 'pointer';
-  sendBtn.style.color = 'rgb(0, 245, 0)';
+  sendBtnHover.style.background = 'rgb(214, 226, 236)';
 }
 
 async function handleSubmit(event) {
