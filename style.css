@@ -274,9 +274,6 @@ nav {
   margin: auto;
   margin-top: 2%;
   width: 90%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6%;
   animation: fade 2s ease forwards;
 }
 .rew {
@@ -285,6 +282,7 @@ nav {
   padding: 3%;
   border-radius: 20px;
   align-self: center;
+  margin-top: 10%;
 }
 .rew img {
   image-rendering: auto;
@@ -295,10 +293,17 @@ nav {
   #mobilep {
     font-size: 2.8vw;
   }
+  #mobileRew {
+    margin: auto;
+  }
 }
 @media screen and (min-width: 650px) {
   #mobilep {
     font-size: 1.5vw;
+  }
+  #mobileRew {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
   }
 }
 
