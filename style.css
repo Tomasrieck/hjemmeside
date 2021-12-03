@@ -171,7 +171,6 @@ button[type="submit"]:hover {
 .omOs p {
   text-align: left;
   line-height: 2.2;
-  font-size: 1.5vw;
   color: rgb(163, 163, 163);
 }
 .omOs a:hover {
@@ -210,7 +209,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   text-align: right;
-  font-size: 1.4vw;
   margin-right: 1%;
 }
 .nav-links ul li {
@@ -291,6 +289,17 @@ nav {
 .rew img {
   image-rendering: auto;
   width: 100%;
+}
+
+@media screen and (min-width: 100px) {
+  #mobilep {
+    font-size: 2.8vw;
+  }
+}
+@media screen and (min-width: 650px) {
+  #mobilep {
+    font-size: 1.5vw;
+  }
 }
 
 #skjult h1 {
