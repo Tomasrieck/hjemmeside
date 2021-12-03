@@ -11,23 +11,36 @@
   overflow: auto;
   background: rgb(0, 0, 0);
 }
-.body1 img {
-  z-index: 1;
-  width: 100%;
-  position: fixed;
-  image-rendering: auto;
+.body1 {
+  position: relative;
+  text-align: center;
+  color: white;
   animation: fade 2s ease forwards;
+}
+.forsideTekst {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  font-family: "Devanagari";
+  font-size: 6vw;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  width: 75%;
 }
 .overskrift h2 {
   position: absolute;
   margin-left: 50%;
-  margin-top: 33%;
+  top: 65%;
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  font-size: 4.2vw;
+  font-size: 5.5vw;
   font-weight: lighter;
   font-family: "Devanagari";
-  width: 50%;
+  width: 75%;
   padding: 1%;
   border-radius: 20px;
   transform: translate(-50%, -50%);
