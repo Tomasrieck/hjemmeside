@@ -190,8 +190,8 @@ button[type="submit"]:hover {
 nav {
   width: 100%;
   position: sticky;
-  margin-bottom: 2vh;
-  margin-top: 2vh;
+  margin-bottom: 1.2vh;
+  margin-top: 1.6vh;
   z-index: 1;
   display: flex;
   align-items: center;
