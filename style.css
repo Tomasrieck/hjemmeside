@@ -31,27 +31,7 @@
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   width: 75%;
 }
-.overskrift h2 {
-  position: absolute;
-  margin-left: 50%;
-  top: 65%;
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  font-size: 5.5vw;
-  font-weight: lighter;
-  font-family: "Devanagari";
-  width: 75%;
-  padding: 1%;
-  border-radius: 20px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 2;
-  animation: fade 2s ease forwards;
-}
-.overskrift h2 a {
-  font-family: "Devanagari";
-}
-.overskrift h2 a:hover {
+.forsideTekst h2 a:hover {
   transition: all 0.3s ease 0s;
   color: rgb(23, 151, 255);
 }
