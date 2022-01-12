@@ -31,7 +31,7 @@
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   width: 75%;
 }
-.forsideTekst h2 a:hover {
+.forsideTekst a:hover {
   transition: all 0.3s ease 0s;
   color: rgb(23, 151, 255);
 }
