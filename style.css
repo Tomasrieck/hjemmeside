@@ -271,6 +271,15 @@ nav {
   #mobileRew {
     margin: auto;
   }
+  #mobileRecaptcha {
+    transform: scale(0.5);
+    transform-origin: 0 0;
+  }
+  .menuIcon {
+    width: 20px;
+    height: 3px;
+    margin: 3px 0;
+  }
 }
 @media screen and (min-width: 650px) {
   #mobilep {
@@ -285,6 +294,15 @@ nav {
   #mobileRew {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
+  }
+  #mobileRecaptcha {
+    transform: scale(1);
+    transform-origin: 0 0;
+  }
+  .menuIcon {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
   }
 }
 
@@ -339,10 +357,7 @@ nav {
   color: rgb(107, 107, 107);
 }
 .menuIcon {
-  width: 35px;
-  height: 5px;
   background-color: white;
-  margin: 6px 0;
 }
 
 .pakke {
