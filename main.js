@@ -30,6 +30,4 @@ async function handleSubmit(event) {
     });
 }
 
-if (email.includes("@")) {
-  form.addEventListener("submit", handleSubmit);
-}
+form.addEventListener("submit", handleSubmit);
