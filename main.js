@@ -1,10 +1,10 @@
 var form = document.getElementById("my-form");
 
 function recaptcha_callback() {
-  var sendBtn = document.querySelector('#send-btn');
-  sendBtn.removeAttribute('disabled');
-  sendBtn.style.cursor = 'pointer';
-  sendBtn.style.color = 'rgb(0, 245, 0)';
+  var sendBtn = document.querySelector("#send-btn");
+  sendBtn.removeAttribute("disabled");
+  sendBtn.style.cursor = "pointer";
+  sendBtn.style.color = "rgb(0, 245, 0)";
 }
 
 async function handleSubmit(event) {
@@ -15,15 +15,20 @@ async function handleSubmit(event) {
     method: form.method,
     body: data,
     headers: {
-        'Accept': 'application/json'
-    }
-  }).then(success => {
-    status.innerHTML = "Tak for beskeden!";
-    form.reset()
-    status.classList.add('sendt');
-  }).catch(error => {
-    status.innerHTML = "Ups! Der skete en fejl.";
-    status.classList.add('ejSendt');
-  });
+      Accept: "application/json",
+    },
+  })
+    .then((success) => {
+      status.innerHTML = "Tak for beskeden!";
+      form.reset();
+      status.classList.add("sendt");
+    })
+    .catch((error) => {
+      status.innerHTML = "Ups! Der skete en fejl.";
+      status.classList.add("ejSendt");
+    });
 }
-form.addEventListener("submit", handleSubmit)
+
+if (form.firstName.length > 0) {
+  form.addEventListener("submit", handleSubmit);
+}
