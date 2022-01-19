@@ -1,4 +1,5 @@
 var form = document.getElementById("my-form");
+var firstName = document.getElementById("firstName");
 
 function recaptcha_callback() {
   var sendBtn = document.querySelector("#send-btn");
@@ -29,6 +30,6 @@ async function handleSubmit(event) {
     });
 }
 
-if (form.firstName.length > 0) {
+if (firstName.length > 0) {
   form.addEventListener("submit", handleSubmit);
 }
